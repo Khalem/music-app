@@ -9,6 +9,7 @@ class App extends Component {
     this.state = {
       query: '',
       artist: null,
+      tracks: [],
       API_TOKEN: ''
     }
   }
@@ -41,22 +42,39 @@ class App extends Component {
     */
     console.log(process.env.API_TOKEN);
     const BASE_URL = "https://api.spotify.com/v1/search?";
-    const FETCH_URL = `${BASE_URL}q=${this.state.query}&type=artist&limit=1`;
-    fetch(FETCH_URL, {
+    const ALBUM_URL = 'https://api.spotify.com/v1/artists'
+    const FETCH_PARAMS = {
       method: 'GET',
       headers: {
         Authorization: `Bearer ${this.state.API_TOKEN}`
       }
-    }).then(response => response.json())
+    }
+    let FETCH_URL = `${BASE_URL}q=${this.state.query}&type=artist&limit=1`;
+
+    fetch(FETCH_URL, FETCH_PARAMS)
+    .then(response => response.json())
+    .then(json => {
+      const artist = json.artists.items[0];
+      this.setState({ artist });
+      
+      /*
+      Fetch artists top tracks
+      */
+      FETCH_URL = `${ALBUM_URL}/${artist.id}/top-tracks?country=IE`
+      fetch(FETCH_URL, FETCH_PARAMS)
+      .then(response => response.json())
       .then(json => {
-        const artist = json.artists.items[0];
-        this.setState({
-          artist
-        });
+        console.log('artist\'s top tracks', json);
+        const { tracks } = json;
+        this.setState({tracks});
       })
       .catch(error => {
         console.log('error', error);
-      });
+      })
+    })
+    .catch(error => {
+      console.log('error', error);
+    });
 
 
   }
@@ -82,12 +100,19 @@ class App extends Component {
             </InputGroup.Append>
           </InputGroup>
         </FormGroup>
-        <Profile
-          artist={this.state.artist}
-        />
-        <div className="Gallery">
-          Gallery
-        </div>
+        {
+          this.state.artist !== null
+          ? <div>
+              <Profile
+                artist={this.state.artist}
+              />
+              <div className="Gallery">
+                Gallery
+              </div>
+            </div>
+          : <div></div>
+        }
+
       </div>
     )
   }
