@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Khalem/music-app/static/css/main.df78d32c.chunk.css",
+    "main.js": "/Khalem/music-app/static/js/main.b4472c70.chunk.js",
+    "main.js.map": "/Khalem/music-app/static/js/main.b4472c70.chunk.js.map",
+    "runtime-main.js": "/Khalem/music-app/static/js/runtime-main.b7f1e6ef.js",
+    "runtime-main.js.map": "/Khalem/music-app/static/js/runtime-main.b7f1e6ef.js.map",
+    "static/js/2.4771fd52.chunk.js": "/Khalem/music-app/static/js/2.4771fd52.chunk.js",
+    "static/js/2.4771fd52.chunk.js.map": "/Khalem/music-app/static/js/2.4771fd52.chunk.js.map",
+    "index.html": "/Khalem/music-app/index.html",
+    "precache-manifest.039561c8db45452b7ca343479e19464f.js": "/Khalem/music-app/precache-manifest.039561c8db45452b7ca343479e19464f.js",
+    "service-worker.js": "/Khalem/music-app/service-worker.js",
+    "static/css/main.df78d32c.chunk.css.map": "/Khalem/music-app/static/css/main.df78d32c.chunk.css.map",
+    "static/media/headphones-icon.gif": "/Khalem/music-app/static/media/headphones-icon.99860b6c.gif",
+    "static/media/App.css": "/Khalem/music-app/static/media/landing.ab994c3c.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b7f1e6ef.js",
+    "static/js/2.4771fd52.chunk.js",
+    "static/css/main.df78d32c.chunk.css",
+    "static/js/main.b4472c70.chunk.js"
+  ]
+}
