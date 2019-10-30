@@ -26,8 +26,10 @@ class App extends Component {
     Get API token from Spotify - it expires so create a new one each time component is mounted to avoid errors.
     */
     const FETCH_AUTH = "https://accounts.spotify.com/api/token";
+    const PROXY_URL = "https://cors-anywhere.herokuapp.com/";
 
-    fetch(FETCH_AUTH, {
+    // Do actual request to recieve token
+    fetch(PROXY_URL + FETCH_AUTH, {
       body: "grant_type=client_credentials",
       headers: {
         Authorization: "Basic Y2I0ZjFkYWRhMDYxNDdhNjlhZGE4Njc2MjY0M2EwZjA6OWNhZTI4NmUxZDg3NGM4NGFhNTA0ZmYwNTJjNDZjNTk=",
