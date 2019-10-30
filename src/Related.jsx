@@ -16,8 +16,6 @@ class RelatedArtists extends Component {
   render() {
     const relatedArtists = this.props.relatedArtists.slice(0, 5);
 
-    console.log('related Artists props', relatedArtists);
-
     return(
       <div>
         <h2 className="related-heading">Related Artists</h2>

@@ -40,7 +40,6 @@ class App extends Component {
     .then(response => response.json())
     .then(json => {
       this.setState({ API_TOKEN: json.access_token });
-      console.log(json);
     })
     .catch(error => console.log(error))
 
@@ -54,8 +53,6 @@ class App extends Component {
     /*
     Search Spotifys API to fetch result and update state.
     */
-    console.log('search() query state', this.state.query);
-
     if (this.state.query === '') {
       return false;
     }
