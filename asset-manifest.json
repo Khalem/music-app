@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/music-app/static/css/main.879a4390.chunk.css",
-    "main.js": "/music-app/static/js/main.96ea804d.chunk.js",
-    "main.js.map": "/music-app/static/js/main.96ea804d.chunk.js.map",
+    "main.js": "/music-app/static/js/main.83016f85.chunk.js",
+    "main.js.map": "/music-app/static/js/main.83016f85.chunk.js.map",
     "runtime-main.js": "/music-app/static/js/runtime-main.91ba4f1d.js",
     "runtime-main.js.map": "/music-app/static/js/runtime-main.91ba4f1d.js.map",
     "static/js/2.4771fd52.chunk.js": "/music-app/static/js/2.4771fd52.chunk.js",
     "static/js/2.4771fd52.chunk.js.map": "/music-app/static/js/2.4771fd52.chunk.js.map",
     "index.html": "/music-app/index.html",
-    "precache-manifest.fd290265bf891fa31ecfbee9bfca7bee.js": "/music-app/precache-manifest.fd290265bf891fa31ecfbee9bfca7bee.js",
+    "precache-manifest.abefb910456a314290148309271a9166.js": "/music-app/precache-manifest.abefb910456a314290148309271a9166.js",
     "service-worker.js": "/music-app/service-worker.js",
     "static/css/main.879a4390.chunk.css.map": "/music-app/static/css/main.879a4390.chunk.css.map",
     "static/media/headphones-icon.gif": "/music-app/static/media/headphones-icon.99860b6c.gif",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.91ba4f1d.js",
     "static/js/2.4771fd52.chunk.js",
     "static/css/main.879a4390.chunk.css",
-    "static/js/main.96ea804d.chunk.js"
+    "static/js/main.83016f85.chunk.js"
   ]
 }
