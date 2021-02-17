@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 class RelatedArtists extends Component {
 
   artistMouseIn(e) {
-    console.log('TARGET', e.target);
     e.target.style.zIndex = '102';
     e.target.nextSibling.style.zIndex = '101';
   }

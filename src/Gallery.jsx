@@ -16,6 +16,10 @@ class Gallery extends Component {
     gallery[0].style.animation = 'fadeIn 3s';
   }
 
+  componentWillUnmount() {
+    this.state.audio.pause();
+  }
+
   playAudio(previewUrl) {
     let audio = new Audio(previewUrl);
     if (!this.state.playing) {
