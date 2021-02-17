@@ -17,7 +17,7 @@ class Gallery extends Component {
   }
 
   componentWillUnmount() {
-    this.state.audio.pause();
+    if (this.state.audio) this.state.audio.pause();
   }
 
   playAudio(previewUrl) {
